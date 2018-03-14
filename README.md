@@ -27,5 +27,5 @@ df %>% filter(STABR == 'NJ' & TYPE %in% c('G','NP')) %>% # G = public, NP = Priv
 ```
 You could easily pipe this into a visualization by adding `%>%` and something like this to the end of the chain above
 ```r
-ggplot(aes(SURVYEAR, grads)) + geom_point()
+ggplot(aes(SURVYEAR, grads)) + geom_point() # customize further
 ```
