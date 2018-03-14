@@ -25,3 +25,7 @@ df %>% filter(STABR == 'NJ' & TYPE %in% c('G','NP')) %>% # G = public, NP = Priv
   group_by(SURVYEAR) %>% 
   summarize(grads = sum(DPL))
 ```
+You could easily pipe this into a visualization by adding `%>%` and something like this to the end of the chain above
+```r
+ggplot(aes(SURVYEAR, grads)) + geom_point()
+```
