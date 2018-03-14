@@ -14,3 +14,4 @@ excel_sheets('All+Enrollment+and+Graduate+Projections.xlsx')
 df <- read_excel('All+Enrollment+and+Graduate+Projections.xlsx', sheet = 'Projections')
 
 ```
+The `Data Notes` sheet serves as the codebook
