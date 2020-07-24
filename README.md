@@ -21,7 +21,8 @@ The `Data Notes` sheet serves as the codebook
 ```r
 # Get estimated graduates for your state
 
-df %>% filter(STABR == 'NJ' & TYPE %in% c('G','NP')) %>% # G = public, NP = Private
+df %>% 
+  filter(STABR == 'NJ' & TYPE %in% c('G','NP')) %>% # G = public, NP = Private
   group_by(SURVYEAR) %>% 
   summarize(grads = sum(DPL))
 ```
